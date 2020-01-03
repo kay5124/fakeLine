@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta id="description" name="description" content="免費貼圖">
+    <meta id="keywords" name="keywords" content="免費貼圖">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+
+    </script>
+    <title>免費貼圖</title>
+
+    <style>
+        * {
+            cursor: default;
+        }
+
+        .main {
+            max-width: 1280px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .download {
+            max-width: 936px;
+            padding: 10px;
+            background: #FF44AA;
+            margin: auto;
+            color: white;
+            font-size: 24px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        function SendMsg() {
+            var url = `https://ed5100.win666.us/`;
+            window.open(`http://line.naver.jp/R/msg/text/?${url}`);
+            setTimeout(() => {
+                window.location.href = "introduction.html";
+            }, 1000);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <img src="top.jpg" />
+        </div>
+        <div class="download" onclick="SendMsg()">
+            下載
+        </div>
+        <div>
+            <img src="footer.jpg" />
+        </div>
+    </div>
+</body>
+
+</html>

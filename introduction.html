@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta id="description" name="description" content="免費貼圖">
+    <meta id="keywords" name="keywords" content="免費貼圖">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+
+    </script>
+    <title>鑫寶</title>
+
+    <style>
+        * {
+            cursor: default;
+        }
+
+        .main {
+            max-width: 1280px;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            for (let index = 1; index <= 22; index++) {
+                var e = document.createElement('div');
+                e.innerHTML = `<img src="${index}.jpg" />`;
+                // var htmlText = `<div><img src="${index}.jpg" /></div>`;
+                document.getElementById("main").appendChild(e);
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="main" id="main">
+    </div>
+</body>
+
+</html>
