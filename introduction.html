@@ -6,6 +6,7 @@
     <meta id="description" name="description" content="免費貼圖">
     <meta id="keywords" name="keywords" content="免費貼圖">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script>
 
     </script>
@@ -39,10 +40,8 @@
     <script>
         window.onload = function () {
             for (let index = 1; index <= 22; index++) {
-                var e = document.createElement('div');
-                e.innerHTML = `<img src="${index}.jpg" />`;
-                // var htmlText = `<div><img src="${index}.jpg" /></div>`;
-                document.getElementById("main").appendChild(e);
+                var htmlText = `<div><img src="${index}.jpg" /></div>`;
+                $("#main").append(htmlText);
             }
         };
 
