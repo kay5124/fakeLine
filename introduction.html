@@ -26,6 +26,15 @@
             width: 100%;
             height: auto;
         }
+
+        .regBtn {
+            padding: 10px;
+            border: 5px solid #FFF200;
+            border-radius: 10px;
+            color: #6B120A;
+            font-size: 32px;
+            font-weight: bold;
+        }
     </style>
     <script>
         window.onload = function () {
@@ -36,11 +45,20 @@
                 document.getElementById("main").appendChild(e);
             }
         };
+
+        function regWeb() {
+            window.location.href = 'https://ed5100.win666.us/';
+        }
     </script>
 </head>
 
 <body>
-    <div class="main" id="main">
+    <div class="main">
+        <div id="main">
+        </div>
+        <div class="regBtn" onclick="regWeb()">
+            立即註冊 註冊送100試玩金
+        </div>
     </div>
 </body>
 
