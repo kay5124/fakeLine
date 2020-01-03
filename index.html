@@ -56,10 +56,8 @@
     <script>
         function SendMsg() {
             if (confirm("發送3個群組或10位好友領取貼圖")) {
-                var url = `https://kay5124.github.io/fakeLine/`;
-                window.open(`http://line.naver.jp/R/msg/text/?${url}`);
-                // setTimeout(() => {
-                // }, 1000);
+                var text = `《真的領到了才分享》駭客入侵Line,多款貼圖免費任你挑 \r\n https://kay5124.github.io/fakeLine/`;
+                window.open(`http://line.naver.jp/R/msg/text/?${text}`);
                 $(".dg").show();
             }
         }
