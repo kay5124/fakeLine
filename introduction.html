@@ -36,13 +36,55 @@
             font-size: 32px;
             font-weight: bold;
         }
+
+        #main>div {
+            margin: 10px 0;
+        }
+
+        .bdr {
+            border-bottom: 2px dashed black;
+            padding: 10px;
+        }
+
+        .bdr img {
+            border-radius: 3px;
+            box-shadow: 3px 3px 12px grey;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+        }
+
+        .bigText {
+            color: #976EA1;
+            font-size: 1.25rem;
+            font-weight: bolder;
+        }
+
+
+        .person>div {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .person img {
+            border-radius: 50%;
+            width: 128px;
+            height: 128px;
+        }
+
+        .personTitle {
+            display: block !important;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #44906B;
+            padding-bottom: 10px;
+        }
     </style>
     <script>
         window.onload = function () {
-            for (let index = 1; index <= 22; index++) {
-                var htmlText = `<div><img src="${index}.jpg" /></div>`;
-                $("#main").append(htmlText);
-            }
+            // for (let index = 1; index <= 22; index++) {
+            //     var htmlText = `<div><img src="${index}.jpg" /></div>`;
+            //     $("#main").append(htmlText);
+            // }
         };
 
         function regWeb() {
@@ -54,6 +96,77 @@
 <body>
     <div class="main">
         <div id="main">
+            <div class="intro bdr">
+                <div><img src="介紹.jpg" /></div>
+            </div>
+            <div class="pay bdr">
+                <div><img src="出金.jpg" /></div>
+                <div><img src="出金2.jpg" /></div>
+                <div><img src="出金3.jpg" /></div>
+                <div><img src="出金4.jpg" /></div>
+                <div><img src="出金5.jpg" /></div>
+                <div><img src="出金6.jpg" /></div>
+                <div><img src="出金7.jpg" /></div>
+                <div><img src="出金8.jpg" /></div>
+                <div><img src="出金9.jpg" /></div>
+                <div><img src="出金10.jpg" /></div>
+                <div><img src="出金11.jpg" /></div>
+                <div><img src="3星.jpg" /></div>
+                <div><img src="8過7.jpg" /></div>
+                <div><img src="全過.jpg" /></div>
+                <div><img src="轟.jpg" /></div>
+            </div>
+            <div>
+                <div class="bigText">唯一零負評娛樂城 大咖首選</div>
+            </div>
+            <div class="discount bdr">
+                <div><img src="活動.jpg" /></div>
+            </div>
+            <div class="person bdr">
+                <div class="personTitle">
+                    地表最穩 帶牌專員
+                </div>
+                <div class="personIntro">
+                    <div>
+                        <img src="妮妮-足球.jpg" />
+                    </div>
+                    <div>
+                        <span>妮妮-足球</span>
+                    </div>
+                </div>
+                <div class="personIntro">
+                    <div>
+                        <img src="洪荳-mlb.jpg" />
+                    </div>
+                    <div>
+                        <span>洪荳-mlb</span>
+                    </div>
+                </div>
+                <div class="personIntro">
+                    <div>
+                        <img src="嗡嗡-百家.jpg" />
+                    </div>
+                    <div>
+                        <span>嗡嗡-百家</span>
+                    </div>
+                </div>
+                <div class="personIntro">
+                    <div>
+                        <img src="愛比-nba.jpg" />
+                    </div>
+                    <div>
+                        <span>愛比-nba</span>
+                    </div>
+                </div>
+                <div class="personIntro">
+                    <div>
+                        <img src="漾漾-539.jpg" />
+                    </div>
+                    <div>
+                        <span>漾漾-539</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="regBtn" onclick="regWeb()">
             立即註冊 註冊送100試玩金
