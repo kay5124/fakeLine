@@ -15,6 +15,11 @@
     <style>
         * {
             cursor: default;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
         }
 
         body {
@@ -32,13 +37,17 @@
             height: auto;
         }
 
-        .regBtn {
-            padding: 10px;
-            border: 5px solid #FFF200;
+        .regDiv>div {
+            display: inline-block;
+            width: 49%;
+            vertical-align: text-top;
+            color: red;
+        }
+
+        .regDiv>div:first-child {
+            border: 5px solid #A87755;
             border-radius: 10px;
-            color: #6B120A;
-            font-size: 32px;
-            font-weight: bold;
+            padding: 5px;
         }
 
         #main>div {
@@ -77,7 +86,6 @@
 
         .personTitle {
             display: block !important;
-            font-size: 1.5rem;
             font-weight: bold;
             color: #44906B;
             padding-bottom: 10px;
@@ -100,8 +108,10 @@
 <body>
     <div class="main">
         <div id="main">
-            <div class="intro bdr">
-                <div><img src="介紹.jpg" /></div>
+            <div>
+                <h1>
+                    鑫寶娛樂城 大額無憂 大咖首選
+                </h1>
             </div>
             <div class="pay bdr">
                 <div><img src="出金.jpg" /></div>
@@ -115,20 +125,38 @@
                 <div><img src="出金9.jpg" /></div>
                 <div><img src="出金10.jpg" /></div>
                 <div><img src="出金11.jpg" /></div>
+            </div>
+            <div>
+                <h1 style="color: red;">
+                    想贏錢不用愁 各類專業牌群等你來
+                </h1>
+            </div>
+            <div class="intro bdr">
+
                 <div><img src="3星.jpg" /></div>
                 <div><img src="8過7.jpg" /></div>
                 <div><img src="全過.jpg" /></div>
                 <div><img src="轟.jpg" /></div>
             </div>
-            <div>
-                <div class="bigText">唯一零負評娛樂城 大咖首選</div>
-            </div>
-            <div class="discount bdr">
-                <div><img src="活動.jpg" /></div>
+            <div class="bdr regDiv">
+                <div onclick="regWeb()">
+                    <h1>立即註冊</h1>
+                </div>
+                <div style="text-align: left;">
+                    <h1>
+                        新會員除直1000在送1100<br />
+                        就會員跳槽找我們 在多送300<br />
+                        你敢介紹我敢送 介紹費無上限<br />
+                        # 存款週週送10%<br />
+                        # 週六存款最高送 5000
+                    </h1>
+                </div>
             </div>
             <div class="person bdr">
                 <div class="personTitle">
-                    地表最穩 帶牌專員
+                    <h1>
+                        地表最穩 帶牌專員
+                    </h1>
                 </div>
                 <div class="personIntro">
                     <div>
@@ -171,9 +199,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="regBtn" onclick="regWeb()">
-            立即註冊 註冊送100試玩金
         </div>
     </div>
 </body>
