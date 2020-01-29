@@ -6,7 +6,12 @@
     <meta id="description" name="description" content="免費貼圖">
     <meta id="keywords" name="keywords" content="免費貼圖">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- javascript -->
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <script>
 
     </script>
@@ -87,13 +92,55 @@
             color: #44906B;
             padding-bottom: 10px;
         }
+
+        .owl-item {
+            transform: scale(0.9) !important;
+            transition: ease-in .3s all;
+        }
+
+        .nowActive {
+            transform: scale(1) !important;
+            transition: ease-in .3s all;
+        }
     </style>
     <script>
         window.onload = function () {
-            // for (let index = 1; index <= 22; index++) {
-            //     var htmlText = `<div><img src="${index}.jpg" /></div>`;
-            //     $("#main").append(htmlText);
-            // }
+            var owl = $('.pay.owl-carousel');
+            var owlTwo = $('.intro.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                items: 1,
+                margin: 5,
+                nav: false,
+                dots: false,
+                autoHeight: true,
+            });
+
+            owlTwo.owlCarousel({
+                loop: true,
+                items: 1,
+                margin: 5,
+                nav: false,
+                dots: false,
+                autoHeight: true,
+            });
+
+            //預設
+            owl.on('changed.pay.owl.carousel', function (e) {
+                setTimeout(() => {
+                    $(".pay .owl-item").removeClass("nowActive");
+                    $($(".pay .owl-item.active")[1]).addClass("nowActive");
+                }, 50);
+            });
+
+            owlTwo.on('changed.intro.owl.carousel', function (e) {
+                setTimeout(() => {
+                    $(".intro .owl-item").removeClass("nowActive");
+                    $($(".intro .owl-item.active")[1]).addClass("nowActive");
+                }, 50);
+            });
+
+            $($(".owl-item.active")[1]).addClass("nowActive");
         };
 
         function regWeb() {
@@ -110,30 +157,29 @@
                     鑫寶娛樂城 大額無憂 大咖首選
                 </h1>
             </div>
-            <div class="pay bdr">
-                <div><img src="出金.jpg" /></div>
-                <div><img src="出金2.jpg" /></div>
-                <div><img src="出金3.jpg" /></div>
-                <div><img src="出金4.jpg" /></div>
-                <div><img src="出金5.jpg" /></div>
-                <div><img src="出金6.jpg" /></div>
-                <div><img src="出金7.jpg" /></div>
-                <div><img src="出金8.jpg" /></div>
-                <div><img src="出金9.jpg" /></div>
-                <div><img src="出金10.jpg" /></div>
-                <div><img src="出金11.jpg" /></div>
+            <div class="pay bdr owl-carousel owl-theme">
+                <div class="item"><img src="出金6.jpg" /></div>
+                <div class="item"><img src="出金7.jpg" /></div>
+                <div class="item"><img src="出金8.jpg" /></div>
+                <div class="item"><img src="出金5.jpg" /></div>
+                <div class="item"><img src="出金.jpg" /></div>
+                <div class="item"><img src="出金2.jpg" /></div>
+                <div class="item"><img src="出金3.jpg" /></div>
+                <div class="item"><img src="出金4.jpg" /></div>
+                <div class="item"><img src="出金9.jpg" /></div>
+                <div class="item"><img src="出金10.jpg" /></div>
+                <div class="item"><img src="出金11.jpg" /></div>
             </div>
             <div>
                 <h1 style="color: red;">
                     想贏錢不用愁 各類專業牌群等你來
                 </h1>
             </div>
-            <div class="intro bdr">
-
-                <div><img src="3星.jpg" /></div>
-                <div><img src="8過7.jpg" /></div>
-                <div><img src="全過.jpg" /></div>
-                <div><img src="轟.jpg" /></div>
+            <div class="intro bdr owl-carousel owl-theme">
+                <div class="item"><img src="3星.jpg" /></div>
+                <div class="item"><img src="8過7.jpg" /></div>
+                <div class="item"><img src="全過.jpg" /></div>
+                <div class="item"><img src="轟.jpg" /></div>
             </div>
             <div class="bdr regDiv">
                 <div onclick="regWeb()">
