@@ -94,13 +94,14 @@
         }
 
         .owl-item {
-            transform: scale(0.9) !important;
+            transform: scale(0.8) !important;
             transition: ease-in .3s all;
         }
 
         .nowActive {
-            transform: scale(1) !important;
+            transform: scale(1.5) !important;
             transition: ease-in .3s all;
+            z-index: 1;
         }
     </style>
     <script>
@@ -109,7 +110,7 @@
             var owlTwo = $('.intro.owl-carousel');
             owl.owlCarousel({
                 loop: true,
-                items: 1,
+                items: 3,
                 margin: 0,
                 nav: false,
                 dots: false,
@@ -118,7 +119,7 @@
 
             owlTwo.owlCarousel({
                 loop: true,
-                items: 1,
+                items: 3,
                 margin: 0,
                 nav: false,
                 dots: false,
@@ -140,7 +141,8 @@
                 }, 50);
             });
 
-            $($(".owl-item.active")[1]).addClass("nowActive");
+            $($(".pay .owl-item.active")[1]).addClass("nowActive");
+            $($(".intro .owl-item.active")[1]).addClass("nowActive");
         };
 
         function regWeb() {
